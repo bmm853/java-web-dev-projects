@@ -1,8 +1,7 @@
 package org.launchcode;
 
 import java.util.Arrays;
-
-public class ArrayPractice {
+public class ArrPract {
     public static void main(String[] args) {
         int[] intArray = {1, 1, 2, 3, 5, 8};
 
