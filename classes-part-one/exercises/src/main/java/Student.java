@@ -16,31 +16,31 @@ public class Student {
         public String getName() {
                 return name;
         }
-        public void setName(String name) {
-                this.name = name;
+        public void setName(String aName) {
+               name = aName;
         }
 
         public int getStudentId() {
                 return studentId;
         }
 
-        private void setStudentId (int studentId) {
-                this.studentId = studentId;
+        private void setStudentId (int aStudentId) {
+                studentId = aStudentId;
         }
 
         public int getNumberOfCredits() {
                 return numberOfCredits;
         }
 
-        public void setNumberOfCredits(int numberOfCredits) {
-                this.numberOfCredits = numberOfCredits;
+        public void setNumberOfCredits(int aNumberOfCredits) {
+                numberOfCredits = aNumberOfCredits;
         }
 
         public double getGpa() {
                 return gpa;
         }
 
-        public void setGpa(double gpa) {
-                this.gpa = gpa;
+        public void setGpa(double aGpa) {
+                gpa = aGpa;
         }
 }
