@@ -59,18 +59,28 @@ public class Student {
 
     @Override
     public String toString() {
-        return name + ": " + numberOfCredits + " credits, " + GPA + " GPA";
+        return name + ": " + numberOfCredits + " credits, " + gpa + " GPA";
     }
 
     // TODO: Add your custom 'equals' method here. Consider which fields should match in order to call two
     //  Student objects equal.
 
-
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Student student)) return false;
-        return studentId == student.studentId;
+    public boolean equals(Object toBeCompared) {
+        if (this == toBeCompared) {
+            return true;
+        }
+
+        if (toBeCompared == null) {
+           return false;
+        }
+
+        if (getClass() != toBeCompared.getClass()) {
+            return false;
+        }
+
+        Student theStudent = (Student) toBeCompared;
+        return theStudent.getStudentId() == getStudentId();
     }
 
     @Override
